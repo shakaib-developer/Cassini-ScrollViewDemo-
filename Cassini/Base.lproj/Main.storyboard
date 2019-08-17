@@ -20,17 +20,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-fH-meY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="812" translatesAutoresizingMaskIntoConstraints="NO" id="oJX-FH-LXi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="top" secondItem="yZF-fH-meY" secondAttribute="top" id="68c-rt-Zw3"/>
-                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="leading" secondItem="yZF-fH-meY" secondAttribute="leading" id="8JF-67-ADG"/>
-                                    <constraint firstAttribute="bottom" secondItem="oJX-FH-LXi" secondAttribute="bottom" id="Z8c-j2-GkO"/>
-                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="trailing" secondItem="yZF-fH-meY" secondAttribute="trailing" id="tgU-18-EnU"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,12 +32,12 @@
                         <viewLayoutGuide key="safeArea" id="hM9-fN-QbK"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="oJX-FH-LXi" id="Tou-Er-Ca6"/>
+                        <outlet property="scrollView" destination="yZF-fH-meY" id="Xv0-Tc-TcX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsV-gD-eHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15.199999999999999" y="124.8768472906404"/>
+            <point key="canvasLocation" x="-4" y="228"/>
         </scene>
     </scenes>
 </document>
