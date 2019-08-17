@@ -18,16 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oJX-FH-LXi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-fH-meY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="812" translatesAutoresizingMaskIntoConstraints="NO" id="oJX-FH-LXi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="top" secondItem="yZF-fH-meY" secondAttribute="top" id="68c-rt-Zw3"/>
+                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="leading" secondItem="yZF-fH-meY" secondAttribute="leading" id="8JF-67-ADG"/>
+                                    <constraint firstAttribute="bottom" secondItem="oJX-FH-LXi" secondAttribute="bottom" id="Z8c-j2-GkO"/>
+                                    <constraint firstItem="oJX-FH-LXi" firstAttribute="trailing" secondItem="yZF-fH-meY" secondAttribute="trailing" id="tgU-18-EnU"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oJX-FH-LXi" firstAttribute="leading" secondItem="5Ed-mt-Y0y" secondAttribute="leading" id="15w-F6-pod"/>
-                            <constraint firstItem="oJX-FH-LXi" firstAttribute="trailing" secondItem="5Ed-mt-Y0y" secondAttribute="trailing" id="CNJ-Da-wCd"/>
-                            <constraint firstAttribute="bottom" secondItem="oJX-FH-LXi" secondAttribute="bottom" id="cVE-87-G0Q"/>
-                            <constraint firstItem="oJX-FH-LXi" firstAttribute="top" secondItem="5Ed-mt-Y0y" secondAttribute="top" id="sPO-CX-654"/>
+                            <constraint firstItem="yZF-fH-meY" firstAttribute="top" secondItem="5Ed-mt-Y0y" secondAttribute="top" id="7nC-dj-ZEq"/>
+                            <constraint firstItem="yZF-fH-meY" firstAttribute="leading" secondItem="5Ed-mt-Y0y" secondAttribute="leading" id="DJt-nI-CKh"/>
+                            <constraint firstAttribute="bottom" secondItem="yZF-fH-meY" secondAttribute="bottom" id="Shv-Dn-x8L"/>
+                            <constraint firstItem="yZF-fH-meY" firstAttribute="trailing" secondItem="5Ed-mt-Y0y" secondAttribute="trailing" id="uA6-bX-1cM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hM9-fN-QbK"/>
                     </view>
